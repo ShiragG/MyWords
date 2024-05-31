@@ -1,0 +1,1 @@
+pyside6-uic ui_myWords.ui -o ui_myWords.py
