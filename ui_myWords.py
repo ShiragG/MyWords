@@ -17,14 +17,14 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QButtonGroup, QHBoxLayout, QHeaderView,
     QLabel, QLineEdit, QMainWindow, QPushButton,
-    QRadioButton, QSizePolicy, QSpacerItem, QTableView,
-    QVBoxLayout, QWidget)
+    QRadioButton, QSizePolicy, QSpacerItem, QTableWidget,
+    QTableWidgetItem, QVBoxLayout, QWidget)
 
 class Ui_MyWords(object):
     def setupUi(self, MyWords):
         if not MyWords.objectName():
             MyWords.setObjectName(u"MyWords")
-        MyWords.resize(358, 543)
+        MyWords.resize(561, 543)
         self.centralwidget = QWidget(MyWords)
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout_5 = QVBoxLayout(self.centralwidget)
@@ -90,10 +90,10 @@ class Ui_MyWords(object):
 
         self.verticalLayout.addLayout(self.horizontalLayout_4)
 
-        self.tableView = QTableView(self.centralwidget)
-        self.tableView.setObjectName(u"tableView")
+        self.tableWidget = QTableWidget(self.centralwidget)
+        self.tableWidget.setObjectName(u"tableWidget")
 
-        self.verticalLayout.addWidget(self.tableView)
+        self.verticalLayout.addWidget(self.tableWidget)
 
         self.removeWordBtn = QPushButton(self.centralwidget)
         self.removeWordBtn.setObjectName(u"removeWordBtn")
